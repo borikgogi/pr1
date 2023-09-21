@@ -1,22 +1,20 @@
-"use strict";
-
-//const result = confirm("nen?");
-
-// const answers=[];
-// answers[0]= prompt("ask1?","");
-// answers[1]= prompt("ask2?","");
-// answers[2]= prompt("ask3?","");
-
-// document.write(answers);
+const numberOfFilms = +prompt("Сколько фильмов вы уже смотрели?", "");
 
 
-let incr = 10,
-	decr = 10;
+const personalMovieDB = {
+	ocunt: numberOfFilms,
+	movies: {},
+	actors: {},
+	genres: [],
+	privat: false
+};
 
-// incr;
-// decr;
+const a = prompt("Один из последних просмотреніх фильмов?", ""),
+	  b = prompt("Насколько оцените его?", ""),
+	  c = prompt("Один из последних просмотреніх фильмов?", ""),
+	  d = prompt("Насколько оцените его?", "");
 
-console.log(++incr + " // " + --decr);
+personalMovieDB.movies.a = b;
+personalMovieDB.movies.c = d;
 
-console.log(5%2);
-console.log(2-4==8);
+console.log(personalMovieDB);
